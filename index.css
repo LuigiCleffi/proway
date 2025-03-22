@@ -1,79 +1,40 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.box {
+  width: 100px;
+  height: 100px;
+  background: lightblue;
+  margin: 10px;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #000;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.static {
+  position: static;
+  /* Valor padrão */
+}
+
+.relative {
+  position: relative;
+  top: 20px;
+  /* Move 20px para baixo */
+  left: 30px;
+  /* Move 30px para a direita */
 }
 
 .container {
-  width: 80%;
-  max-width: 1200px;
-  border: 2px solid #6a5acd;
-  padding: 40px;
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background: lightgray;
 }
 
-.image-container {
-  width: 40%;
+.absolute {
+  position: absolute;
+  top: 80px;
+  left: 300px;
 }
 
-.product-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.controls {
-  width: 50%;
-}
-
-.size-buttons {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 30px;
-}
-
-.size-button {
-  background-color: transparent;
-  border: 2px solid #6a5acd;
-  color: #6a5acd;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.email-form {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.email-input {
-  flex: 1;
-  padding: 10px;
-  border: 2px solid #6a5acd;
-  background-color: transparent;
-  color: #fff;
-}
-
-.send-button {
-  background-color: transparent;
-  border: 2px solid #6a5acd;
-  color: #6a5acd;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.update-text {
-  font-size: 14px;
+.fixed {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
 }
